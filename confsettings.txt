@@ -1,7 +1,0 @@
-<virtualhost *:80="">
-ServerAdmin webmaster@localhost.com
-ServerName yourdomain.here
-DocumentRoot /var/www/yourdomain.here
-ErrorLog ${APACHE_LOG_DIR}/error-log
-CustomLog ${APACHE_LOG_DIR}/access.log combined
-</virtualhost>
