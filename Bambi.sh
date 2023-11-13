@@ -3,7 +3,7 @@ clear
 echo "Welcome to Bambi, your shortcut to linux setup. Just a few questions to get us started."
 echo "What can I do for you? Select an option from the list below."
 echo "1) Install Full LAMPstack			2)Configure DNS and Clock"
-echo "3) Install Wordpress/Joomla		4)??????"
+echo "3) Install Wordpress/Joomla		4)Connect to windows server and install AD"
 echo "5) Profit!						6) This space intentionally left blank"
 read ch
 
@@ -17,7 +17,7 @@ elif ($ch == "3") {
 		./subscripts/presjoom.sh
 	}
 elif ($ch == "4") {
-		echo "ARGH UNDERPANTS GNOMES!"
+		./subscripts/
 	}
 elif ($ch == "5") {
 		echo "ALL HAIL LEMMYWINKS!"
