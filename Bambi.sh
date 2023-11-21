@@ -28,4 +28,4 @@ elif [ $ch == "6" ]
 else
 	echo "I'm sorry, please try again."
 	./Bambi.sh
-
+fi
