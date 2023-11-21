@@ -7,22 +7,22 @@ echo "3) Install Wordpress/Joomla		4)Connect to windows server and install AD"
 echo "5) Profit!						6) This space intentionally left blank"
 read ch
 
-if [$ch == "1"]
+if [ $ch == "1" ]
 	then
 		./subscripts/LAMP.sh
-elif [$ch == "2"]
+elif [ $ch == "2" ]
 	then
 		./subscripts/dclock.sh
-elif [$ch == "3"]
+elif [ $ch == "3" ]
 	then
 		./subscripts/presjoom.sh
-elif [$ch == "4"]
+elif [ $ch == "4" ]
 	then
 		./subscripts/
-elif [$ch == "5"]
+elif [ $ch == "5" ]
 	then
 		echo "ALL HAIL LEMMYWINKS!"
-elif [$ch == "6"]
+elif [ $ch == "6" ]
 	then
 		echo "Beware the leopard."
 else
