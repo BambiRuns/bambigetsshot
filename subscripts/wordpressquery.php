@@ -5,8 +5,7 @@ $server = "localhost";
 
 $conn = new mysqli($server, $user, $pass);
 
-$sql = "CREATE DATABASE wordpress; CREATE USER wordpress@localhost IDENTIFIED BY 'Atamon69'; GRANT ALL ON wordpress.* TO wordpress@localhost; FLUSH PRIVILEGES;";
-
+$sql = "CREATE DATABASE wordpress;";
 $sqla = "CREATE USER 'wordpress'@'localhost' IDENTIFIED BY 'Atamon69';";
 $sqlb = "GRANT ALL ON wordpress.* TO 'wordpress' IDENTIFIED BY 'Atamon69';";
 $sqlc = "FLUSH PRIVILEGES;";
