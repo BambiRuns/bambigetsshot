@@ -15,9 +15,9 @@ mkdir /var/bambi/back/apache/
 mkdir /var/bambi/back/mariadb/
 mkdir /var/bambi/back/php/
 
-rsync #path to apache config files
-rsync #path to mariadb master db
-rsync #path to php main folder
+#rsync #path to apache config files
+#rsync #path to mariadb master db
+#rsync #path to php main folder
 
 echo "0 23 * * * sudo cp -r -f /var/bambi/apache/ /var/bambi/back/apache/" >> /var/spool/cron/crontabs/root
 echo "0 23 * * * sudo cp -r -f /var/bambi/mariadb/ /var/bambi/back/mariadb/" >> /var/spool/cron/crontabs/root
