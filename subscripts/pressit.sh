@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt update
-sudo apt install -y apache2 ghostscript libapache2-mod-php mysql-server php php-bcmath php-curl php-imagick php-intl php-json php-mbstring php-mysql php-xml php-zip
+sudo apt install -y curl apache2 ghostscript libapache2-mod-php mysql-server php php-bcmath php-curl php-imagick php-intl php-json php-mbstring php-mysql php-xml php-zip
 
 sudo mkdir -p /srv/www
 sudo chown www-data: /srv/www
@@ -15,7 +15,7 @@ sudo a2enmod rewrite
 sudo a2dissite 000-default
 sudo systemctl restart apache2.service
 
-./subscripts/wordpressquery.php
+php ./subscripts/wordpressquery.php
 
 sudo systemctl restart mysql.service
 
@@ -36,5 +36,5 @@ sudo -u www-data sed -i 's/password_here/bambigetsshot/' /srv/www/wordpress/wp-c
 #define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
 #define( 'NONCE_SALT',       'put your unique phrase here' );
 
-clear
-echo "Wordpess is now accessible at http://localhost/
+
+echo "Wordpess is now accessible at http://localhost/"
