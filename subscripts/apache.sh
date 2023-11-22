@@ -14,8 +14,8 @@ domifile="$domi$exti"
 #creates the configuration file
 sudo touch /etc/apache2/sites-available/$domifile
 cat confOverwrites/confsettings.txt >> /etc/apache2/sites-available/$domifile
-sudo mkdir /var/www/$domi$exti2
-sudo touch /var/www/$domi$exti2/index.html
-sudo echo '<html>' >> /var/www/$domi$exti2/index.html
-sudo echo 'This is a test' >> /var/www/$domi$exti2/index.html
-sudo echo '</html>' >> /var/www/$domi$exti2/index.html
+sudo mkdir /var/www/html/$domi$exti2
+sudo touch /var/www/html/$domi$exti2/index.html
+sudo echo '<html>' >> /var/www/html/$domi$exti2/index.html
+sudo echo 'This is a test' >> /var/www/html/$domi$exti2/index.html
+sudo echo '</html>' >> /var/www/html/$domi$exti2/index.html

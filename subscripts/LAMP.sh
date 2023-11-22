@@ -1,8 +1,9 @@
 #!/bin/bash
 
+./subscripts/php.sh
 ./subscripts/apache.sh
 ./subscripts/maria.sh
-./subscripts/php.sh
+
 
 mkdir /var/bambi/
 mkdir /var/bambi/back/
@@ -26,3 +27,4 @@ clear
 
 echo " "
 echo "Success! LAMP Installed. I love Lamp, do you love lamp?"
+echo "PS: the default superuser of this installation is named omnia, and the password is Atamon69"
