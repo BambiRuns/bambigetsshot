@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt update
-sudo apt install -y curl apache2 ghostscript libapache2-mod-php mysql-server php php-bcmath php-curl php-imagick php-intl php-json php-mbstring php-mysql php-xml php-zip
+sudo apt install -y curl apache2 ghostscript libapache2-mod-php mysql-server php php-cli php-bcmath php-curl php-imagick php-intl php-json php-mbstring php-mysql php-xml php-zip
 
 sudo mkdir -p /srv/www
 sudo chown www-data: /srv/www
@@ -13,6 +13,9 @@ sudo a2ensite wordpress
 sudo a2enmod rewrite
 
 sudo a2dissite 000-default
+
+sudo echo "Please wait patiently"
+
 sudo systemctl restart apache2.service
 
 php ./subscripts/wordpressquery.php
