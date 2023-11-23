@@ -7,7 +7,7 @@ sudo chown www-data: /srv/www
 curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /srv/www
 
 touch /etc/apache2/sites-available/wordpress.conf
-cat configOverwrites/wordpressconf.txt > /etc/apache2/sites-available/wordpress.conf
+cat confOverwrites/wordpressconf.txt > /etc/apache2/sites-available/wordpress.conf
 
 sudo a2ensite wordpress
 sudo a2enmod rewrite

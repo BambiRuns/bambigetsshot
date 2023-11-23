@@ -36,5 +36,5 @@ $sqlc = "FLUSH PRIVILEGES;";
 	else {
 		echo "Error: " . $sqlc . " " . $conn->error;
 	}
-echo "If you got three exclamation marks it worked!
+echo "If you got three exclamation marks it worked!";
 ?>
